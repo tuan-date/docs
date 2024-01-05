@@ -2,4 +2,4 @@
 
 ## 介绍
 
-Tuan Chat 是采用 [Matirx](https://matrix.org) 项目搭建的一个开放的聊天室。
+Tuan Chat 是支持`端到端加密`的`联邦宇宙` `开源`项目 [Matirx](https://matrix.org) 搭建的一个开放互联的聊天室，旨在提供安全，去中心化，互联互通，自由隐私的网络聊天服务。

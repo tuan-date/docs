@@ -16,10 +16,11 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '开始使用',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '介绍', link: '/start' },
+          { text: '注册', link: '/signup' },
+          { text: '概念碎碎念', link: '/concepts' }
         ]
       }
     ],
