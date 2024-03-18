@@ -1,8 +1,8 @@
 # 注册
 
-当你下载了任何客户端，或者打开了 `Tuan Chat` 运营的 [Element](https://web.tuan.date) 或者 [Cinny](https://cinny.tuan.date) 网站后，这就意味着你可以注册使用 Tuan Chat 了。
+当你下载安装了任何客户端，或者打开了 `Tuan Chat` 运营的 [Element](https://web.tuan.date) 或者 [Cinny](https://cinny.tuan.date) 网站后，这就意味着你可以注册使用 `Tuan Chat` 了。
 
-由 `Tuan Chat` 运营的 [Element](https://web.tuan.date) 或者 [Cinny](https://cinny.tuan.date) 网站，服务器默认会选择 `i.tuan.date`，无需进行额外设置。倘若你下载客户端，一般来说默认服务器并非 `i.tuan.date`，而是 matrix 官方实例 `matrix.org`（在某些地区大多数时间无法直接访问），因此你需要将 `matrix.org` 删除，换成 `i.tuan.date`。
+由 `Tuan Chat` 运营的 [`Element`](https://web.tuan.date) 或者 [`Cinny`](https://cinny.tuan.date) 网站，服务器默认会选择 `i.tuan.date`，无需进行额外设置。倘若你下载客户端，一般来说默认服务器并非 `i.tuan.date`，而是 matrix 官方实例 `matrix.org`（在某些地区大多数时间无法直接访问），因此你需要将 `matrix.org` 删除，换成 `i.tuan.date`。
 
 > - 网页端该选择 `Element` 还是 `Cinny`?  
 > - `Element` 与 `Cinny` 均为 `Tuan Chat` 的网页端，其中 `Element` 是专门为大屏设备进行了适配，就是在电脑上以及平板上等屏幕较大的设备可以拥有良好的表现。而 `Cinny` 则是大小屏均可使用，理论上 `Element` 支持的功能比 `Cinny` 更多。另外，`Cinny`目前不支持中文（  
@@ -46,3 +46,5 @@
 6. 登录成功后，会跳转至 `Continue to your account` 界面，这里点击蓝色的 `Continue` 按钮即可。
 
 ![element-signup-6](/assets/element-signup-6.webp)
+
+首次登录后，建议使用 `Element` 设置安全备份，以实现多设备端到端加密同步，具体可参考 [`设置安全备份`](/security-backup.html) 部分。

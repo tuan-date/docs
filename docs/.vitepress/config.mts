@@ -20,7 +20,15 @@ export default defineConfig({
         items: [
           { text: '介绍', link: '/start' },
           { text: '注册', link: '/signup' },
+          { text: '安全备份', link: '/security-backup' },
           { text: '概念碎碎念', link: '/concepts' }
+        ]
+      },
+      {
+        text: '客户端',
+        items: [
+          { text: '下载', link: '/downloads' },
+          { text: '使用', link: '/clients' }
         ]
       }
     ],
