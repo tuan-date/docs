@@ -98,7 +98,7 @@ function updateVersionAndLink(platform, apiURL) {
 
       // 更新链接列
       const link = document.createElement('a');
-      link.href = ipfsGateway + 'ipfs/' + latestCID + '/' + latestFilename;
+      link.href = ipfsGateway + '/ipfs/' + latestCID + '/' + latestFilename;
       link.textContent = '下载';
       link.className = 'download-button'; // 添加类名
       linkCell.appendChild(link);
