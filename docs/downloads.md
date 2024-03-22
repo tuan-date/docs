@@ -52,10 +52,46 @@
 </table>
 
 <script>
-function updateVersionAndLink(platform, apiURL) {
-  // IPFS 网关地址
-  const ipfsGateway = 'https://gateway.pinata.cloud';
+// 网关列表
+const gateways = [
+  'https://gateway.pinata.cloud',
+  'https://ipfs.io',
+  'https://cloudflare-ipfs.com',
+  'https://dweb.link',
+  'https://ipfs.greyh.at',
+  'https://ipfs.macholibre.org',
+  'https://ipfs.runfission.com',
+  'https://ipfs.moralweb.com',
+  'https://ipfs.mrh.io',
+  'https://hardbin.com',
+  'https://nftstorage.link',
+  'https://4everland.io',
+  'https://w3s.link',
+  // 添加更多网关...
+];
 
+// 检查网关的可访问性和延迟
+function checkGateway(gateway, index, total, tempLink) {
+  const start = Date.now();
+  // 更新临时链接的文本，显示优选进度
+  tempLink.textContent = '正在优选中，进度 ' + index + '/' + total + '，请稍等';
+  return fetch(gateway, { mode: 'no-cors' }) // 使用 'no-cors' 模式来避免跨域问题
+    .then(() => ({ gateway, latency: Date.now() - start }))
+    .catch(() => ({ gateway, latency: Infinity }));
+}
+
+// 获取最佳网关
+function getBestGateway(tempLink) {
+  return Promise.all(gateways.map((gateway, index) => checkGateway(gateway, index + 1, gateways.length, tempLink)))
+    .then(results => {
+      // 按照延迟排序，选择延迟最低的网关
+      results.sort((a, b) => a.latency - b.latency);
+      return results[0].gateway;
+    });
+}
+
+// 修改 updateVersionAndLink 函数，添加一个新的参数
+function updateVersionAndLink(platform, apiURL) {
   // 获取数据
   fetch(apiURL)
     .then(response => response.json())
@@ -79,17 +115,28 @@ function updateVersionAndLink(platform, apiURL) {
       // 更新文件名列
       filenameCell.textContent = latestFilename;
 
-      // 更新链接列
-      const link = document.createElement('a');
-      link.href = ipfsGateway + '/ipfs/' + latestCID + '/' + latestFilename;
-      link.textContent = '下载';
-      link.className = 'download-button'; // 添加类名
-      linkCell.appendChild(link);
+      // 创建一个临时的下载链接，显示优选网关的进度
+      const tempLink = document.createElement('a');
+      tempLink.textContent = '正在优选中，请稍等';
+      tempLink.className = 'download-button'; // 添加类名
+      linkCell.appendChild(tempLink);
+
+      // 使用最佳网关来更新下载链接
+      getBestGateway(tempLink).then(gateway => {
+        // 更新链接列
+        const link = document.createElement('a');
+        link.href = gateway + '/ipfs/' + latestCID + '/' + latestFilename;
+        link.textContent = '下载';
+        link.className = 'download-button'; // 添加类名
+
+        // 替换临时的下载链接为实际的下载链接
+        linkCell.replaceChild(link, tempLink);
+      });
     })
     .catch(error => console.error('Error:', error));
 }
 
-// 使用函数来更新每个平台的数据
+// 更新版本和链接
 updateVersionAndLink('sc-android', '/clients/json/schildichat-android-cid.json');
 updateVersionAndLink('sc-windows-install', '/clients/json/schildichat-windows-install-cid.json');
 updateVersionAndLink('sc-windows-portable', '/clients/json/schildichat-windows-portable-cid.json');
