@@ -12,23 +12,23 @@
 
 1. 打开 [`Element`](https://web.tuan.party/) 网站，等待其加载完毕。
 
-![element-signup-1](/assets/element-signup-1.webp)
+![element-signup-1](/assets/imgs/signup/element/element-signup-1.webp)
 
 这里需要注意的是，由于某些地区的网络干扰污染问题，如果遇到网页加载不出来的情况，可以尝试多刷新几次，并确认网址是 "https" 开头的而不是 "http" 开头的。
 
 2. 点击 `登录` 按钮，等待其加载完毕。加载完毕后，我们可以看到 `家服务器` 默认已经是 `i.tuan.party` 了。
 
-![element-signup-2](/assets/element-signup-2.webp)
+![element-signup-2](/assets/imgs/signup/element/element-signup-2.webp)
 
 3. 点击`使用 Tuan ID 继续` 按钮，等待其跳转至 `Tuan ID` 页面并加载完毕。
 
-![element-signup-3](/assets/element-signup-3.webp)
+![element-signup-3](/assets/imgs/signup/element/element-signup-3.webp)
 
 `Cinny` 这一步的做法与 Element 大同小异，只是变成了点击 `Login With Tuan ID` 按钮。
 
 4. 点击 "没有账号，立即`注册`"" 按钮。
 
-![element-signup-4](/assets/element-signup-4.webp)
+![element-signup-4](/assets/imgs/signup/element/element-signup-4.webp)
 
 5. 输入相关信息。
 
@@ -39,13 +39,13 @@
 - `密码` 是最关键的一环。硬性规则是至少需要 6 个字符。请不要设置任何您常用的密码，否则可能增加您其他账号被盗取的风险。不要在密码里包含生日，姓名等容易被猜测的信息。倘若忘记了密码，请尝试联系 Tuan Chat 运营人员以重置密码。
 - `邀请码` 请从邀请人那边获取。
   
-![element-signup-5](/assets/element-signup-5.webp)
+![element-signup-5](/assets/imgs/signup/element/element-signup-5.webp)
 
 输入完成后，便可点击`登录`按钮进行登录了。
 
 6. 登录成功后，会跳转至 `Continue to your account` 界面，这里点击蓝色的 `Continue` 按钮即可。
 
-![element-signup-6](/assets/element-signup-6.webp)
+![element-signup-6](/assets/imgs/signup/element/element-signup-6.webp)
 
 首次登录后，建议使用 `Element` 设置安全备份，以实现多设备端到端加密同步，具体可参考 [`设置安全备份`](/security-backup.html) 部分。
 
@@ -53,26 +53,26 @@
 
 1. 打开 [`Cinny`](https://cinny.tuan.party) 网站，等待其加载完毕。加载完毕后，将 `家服务器` 填写为 `in.tuan.party` 了。
 
-![cinny-signup-1](/assets/cinny-signup-1.webp)
+![cinny-signup-1](/assets/imgs/signup/cinny/cinny-signup-1.webp)
 
 2. 直接使用用户名登录是不行的，可以看到下面有一个 `Login with tuan ID` ,即需要使用身份认证程序登录；
 
-![cinny-signup-2](/assets/cinny-signup-2.webp)
+![cinny-signup-2](/assets/imgs/signup/cinny/cinny-signup-2.webp)
 
-![cinny-signup-3](/assets/cinny-signup-3.webp)
+![cinny-signup-3](/assets/imgs/signup/cinny/cinny-signup-3.webp)
 
 3. 点击 立即`注册` 按钮，设置用户名和密码，以及邀请码；
 
-![cinny-signup-4](/assets/cinny-signup-4.webp)
+![cinny-signup-4](/assets/imgs/signup/cinny/cinny-signup-4.webp)
 
 4. 随后返回并用刚刚注册的账号登陆此ID认证程序，成功后会跳转回cinny登录界面；
 
-![cinny-signup-5](/assets/cinny-signup-5.webp)
+![cinny-signup-5](/assets/imgs/signup/cinny/cinny-signup-5.webp)
 
 5. 登陆成功后即可进入web端的cinny主界面，可以看到大厅和各个房间；
 
-![cinny-signup-6](/assets/cinny-signup-6.webp)
+![cinny-signup-6](/assets/imgs/signup/cinny/cinny-signup-6.webp)
 
-![cinny-signup-7](/assets/cinny-signup-7.webp)
+![cinny-signup-7](/assets/imgs/signup/cinny/cinny-signup-7.webp)
 
 6. 首次登录后，建议使用设置安全备份，以实现多设备端到端加密同步，具体可参考 [`设置安全备份`](/security-backup.html) 部分。

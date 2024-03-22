@@ -13,9 +13,9 @@ SchildiChat 是一个开源的 Fork 自 Element 的 Matrix 客户端，它相对
 
 ### Android 应用商店（均需互联网络环境）
 
-<a href="https://play.google.com/store/apps/details?id=de.spiritcroc.riotx" target="_blank"><img src="/assets/gplay.webp" width="25%" alt="Google Play"></a>
+<a href="https://play.google.com/store/apps/details?id=de.spiritcroc.riotx" target="_blank"><img src="/assets/imgs/appstore/gplay.webp" width="25%" alt="Google Play"></a>
 
-<a href="https://f-droid.org/zh_Hans/packages/de.spiritcroc.riotx/" target="_blank"><img src="/assets/fdroid.webp" width="25%" alt="F-Droid"></a>
+<a href="https://f-droid.org/zh_Hans/packages/de.spiritcroc.riotx/" target="_blank"><img src="/assets/imgs/appstore/fdroid.webp" width="25%" alt="F-Droid"></a>
 
 ### 下载
 
@@ -106,9 +106,9 @@ updateVersionAndLink('macos', '/clients/json/schildichat-macos-cid.json');
 updateVersionAndLink('linux', '/clients/json/schildichat-linux-appimage-cid.json');
 </script>
 
-> **关于尊贵的 iOS 与 iPadOS 平台：**  
+> **关于 iOS 与 iPadOS 平台：**  
 > 很遗憾，目前 SchildiChat 暂未提供 iOS 版本。不过，你可以在登录外区 Apple 账号的前提下安装 Element 或下面要介绍的 FluffyChat（当然如果你选择自签或通过越狱等手段，请自行探索）  
-> <a href="https://apps.apple.com/us/app/element-messenger/id1083446067" target="_blank"><img src="/assets/appstore-badge.webp" width="25%" alt="App Store"></a>
+> <a href="https://apps.apple.com/us/app/element-messenger/id1083446067" target="_blank"><img src="/assets/imgs/appstore/appstore-badge.webp" width="25%" alt="App Store"></a>
 
 ## FluffyChat
 
@@ -120,10 +120,10 @@ FluffyChat 是一个开源的 Matrix 客户端，它专注于提供更好的用�
   
 ### 应用商店（均需互联网络环境或外区账号）
 
-<a href="https://play.google.com/store/apps/details?id=chat.fluffy.fluffychat" target="_blank"><img src="/assets/gplay.webp" width="25%" alt="Google Play"></a>
+<a href="https://play.google.com/store/apps/details?id=chat.fluffy.fluffychat" target="_blank"><img src="/assets/imgs/appstore/gplay.webp" width="25%" alt="Google Play"></a>
 
-<a href="https://f-droid.org/zh_Hans/packages/chat.fluffy.fluffychat/" target="_blank"><img src="/assets/fdroid.webp" width="25%" alt="F-Droid"></a>
+<a href="https://f-droid.org/zh_Hans/packages/chat.fluffy.fluffychat/" target="_blank"><img src="/assets/imgs/appstore/fdroid.webp" width="25%" alt="F-Droid"></a>
 
-<a href="https://apps.apple.com/us/app/fluffychat/id1551469600" target="_blank"><img src="/assets/appstore-badge.webp" width="25%" alt="App Store"></a>
+<a href="https://apps.apple.com/us/app/fluffychat/id1551469600" target="_blank"><img src="/assets/imgs/appstore/appstore-badge.webp" width="25%" alt="App Store"></a>
 
 ### 下载
