@@ -71,7 +71,7 @@ Tuan Chat 提供了多个平台的客户端应用程序，您可以根据自己�
 <script>
 function updateVersionAndLink(platform, apiURL) {
   // IPFS 网关地址
-  const ipfsGateway = 'https://gateway.pinata.cloud/ipfs/';
+  const ipfsGateway = 'https://gateway.pinata.cloud';
 
   // 获取数据
   fetch(apiURL)
@@ -98,7 +98,7 @@ function updateVersionAndLink(platform, apiURL) {
 
       // 更新链接列
       const link = document.createElement('a');
-      link.href = ipfsGateway + 'ipfs/' + latestCID + '/' + latestFilename;
+      link.href = ipfsGateway + '/ipfs/' + latestCID + '/' + latestFilename;
       link.textContent = '下载';
       link.className = 'download-button'; // 添加类名
       linkCell.appendChild(link);
