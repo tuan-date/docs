@@ -5,7 +5,7 @@
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && node scripts/copyClientsJson.js",
+    "docs:build": "node scripts/post-run/*.js && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {

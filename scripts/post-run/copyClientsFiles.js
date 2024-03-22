@@ -1,7 +1,8 @@
 const fs = require('fs-extra');
 
-async function copyJsonFiles() {
+async function copyClientsFiles() {
   await fs.copy('docs/clients', '.vitepress/dist/clients');
+  console.log('Copied clients files');
 }
 
-copyJsonFiles();
+copyClientsFiles();
