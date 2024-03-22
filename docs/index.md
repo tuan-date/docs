@@ -11,8 +11,8 @@ hero:
       text: 开始使用
       link: /start
     - theme: alt
-      text: 客户端使用
-      link: /usage
+      text: 站点列表
+      link: /sites-list
 
 features:
   - title: Feature A
