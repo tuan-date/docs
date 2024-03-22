@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Tuan Docs"
-  text: "Tuan Chat Docs."
+  name: "Tuan Chat"
+  text: "Chat Among Tuan"
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -12,7 +12,7 @@ hero:
       link: /start
     - theme: alt
       text: 客户端使用
-      link: /clients
+      link: /usage
 
 features:
   - title: Feature A

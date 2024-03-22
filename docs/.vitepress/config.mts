@@ -2,14 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Tuan Docs",
+  title: "Tuan Chat",
   description: "Tuan Chat Docs.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
       { text: '下载', link: '/downloads' },
-      { text: '客户端', link: '/clients' },
       { text: 'Element', link: 'https://web.tuan.party' },
       { text: 'Cinny', link: 'https://cinny.tuan.party' }
     ],
@@ -29,7 +28,7 @@ export default defineConfig({
         text: '客户端',
         items: [
           { text: '下载', link: '/downloads' },
-          { text: '使用', link: '/clients' }
+          { text: '使用', link: '/usage' }
         ]
       }
     ],
