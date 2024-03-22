@@ -9,8 +9,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '下载', link: '/downloads' },
-      { text: 'Element', link: 'https://web.tuan.party' },
-      { text: 'Cinny', link: 'https://cinny.tuan.party' }
+      { text: '站点列表', link: '/sites-list' },
     ],
 
     sidebar: [
@@ -18,6 +17,7 @@ export default defineConfig({
         text: '开始使用',
         items: [
           { text: '介绍', link: '/start' },
+          { text: '站点列表', link: '/sites-list' },
           { text: '注册', link: '/signup' },
           { text: '密钥', link: '/key' },
           { text: '安全备份', link: '/security-backup' },
