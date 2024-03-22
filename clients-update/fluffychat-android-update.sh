@@ -29,7 +29,7 @@ if [ -z "$NFT_APIKEY" ]; then
 fi
 
 # 获取 fluffychat 的 release 信息
-url="https://github.com/krille-chan/fluffychat/releases/latest/fluffychat.apk"
+url="https://github.com/krille-chan/fluffychat/releases/download/v1.18.0/fluffychat.apk"
 filename="fluffychat.apk"
 version=$(curl -s https://api.github.com/repos/krille-chan/fluffychat/releases/latest | jq -r '.tag_name')
 
