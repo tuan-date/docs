@@ -20,7 +20,7 @@ export default defineConfig({
         items: [
           { text: '介绍', link: '/start' },
           { text: '注册', link: '/signup' },
-          { text: '密钥', link: '/key' }，
+          { text: '密钥', link: '/key' },
           { text: '安全备份', link: '/security-backup' },
           { text: '概念碎碎念', link: '/concepts' }
         ]
@@ -35,7 +35,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/tuandate/docs' }
+      { icon: 'github', link: 'https://github.com/tuan-date/docs' }
     ]
   }
 })
