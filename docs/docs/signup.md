@@ -1,8 +1,8 @@
 # 注册
 
-当你下载安装了任何客户端，或者打开了 `Tuan Chat` 运营的 [Element](https://in.tuan.party/) 或者 [Cinny](https://cinny.tuan.party) 网站后，这就意味着你可以注册使用 `Tuan Chat` 了。
+当你下载安装了任何客户端，或者打开了 `Tuan Chat` 运营的 [Element](https://web.tuan.party/) 或者 [Cinny](https://cinny.tuan.party) 网站后，这就意味着你可以注册使用 `Tuan Chat` 了。
 
-由 `Tuan Chat` 运营的 [`Element`](https://in.tuan.party/) 或者 [`Cinny`](https://cinny.tuan.party) 网站，服务器默认会选择 `i.tuan.party`，无需进行额外设置。倘若你下载客户端，一般来说默认服务器并非 `i.tuan.party`，而是 matrix 官方实例 `matrix.org`（在某些地区大多数时间无法直接访问），因此你需要将 `matrix.org` 删除，换成 `i.tuan.party`。
+由 `Tuan Chat` 运营的 [`Element`](https://web.tuan.party/) 或者 [`Cinny`](https://cinny.tuan.party) 网站，服务器默认会选择 `i.tuan.party`，无需进行额外设置。倘若你下载客户端，一般来说默认服务器并非 `i.tuan.party`，而是 matrix 官方实例 `matrix.org`（在某些地区大多数时间无法直接访问），因此你需要将 `matrix.org` 删除，换成 `i.tuan.party`。
 
 > - 网页端该选择 `Element` 还是 `Cinny`?  
 > - `Element` 与 `Cinny` 均为 `Tuan Chat` 的网页端，其中 `Element` 是专门为大屏设备进行了适配，就是在电脑上以及平板上等屏幕较大的设备可以拥有良好的表现。而 `Cinny` 则是大小屏均可使用，理论上 `Element` 支持的功能比 `Cinny` 更多。另外，`Cinny`目前不支持中文（  
@@ -10,7 +10,7 @@
 
 ## `Element` 的注册流程：
 
-1. 打开 [`Element`](https://in.tuan.party/) 网站，等待其加载完毕。
+1. 打开 [`Element`](https://web.tuan.party/) 网站，等待其加载完毕。
 
 ![element-signup-1](/assets/element-signup-1.webp)
 
@@ -51,7 +51,7 @@
 
 ## `Cinny` 的注册流程：
 
-1. 打开 [`Cinny`](https://cinny.tuan.date) 网站，等待其加载完毕。加载完毕后，将 `家服务器` 填写为 `in.tuan.party` 了。
+1. 打开 [`Cinny`](https://cinny.tuan.party) 网站，等待其加载完毕。加载完毕后，将 `家服务器` 填写为 `in.tuan.party` 了。
 
 ![cinny-signup-1](/assets/cinny-signup-1.webp)
 
