@@ -2,7 +2,7 @@
 
 ## Development
 
-### Install Dependencies
+### Install Modules
 
 ```bash
 pnpm install
@@ -10,7 +10,7 @@ pnpm install
 
 If you have not installed `pnpm`, here is the official [installation guide](https://pnpm.io/installation).
 
-### Update Dependencies
+### Update Modules
 
 ```bash
 pnpm update
