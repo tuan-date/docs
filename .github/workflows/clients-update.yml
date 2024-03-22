@@ -30,6 +30,12 @@ jobs:
               shell: bash
               env:
                 NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
+            - name: Update FluffyChat Android
+              run: |
+                bash clients-update/fluffychat-android-update.sh
+              shell: bash
+              env:
+                NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
             - name: Commit and push changes
               run: |
                 git config --local user.email "action@github.com"
