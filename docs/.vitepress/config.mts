@@ -10,8 +10,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '下载', link: '/downloads' },
       { text: '客户端', link: '/clients' },
-      { text: 'Element', link: 'https://web.tuan.date' },
-      { text: 'Cinny', link: 'https://cinny.tuan.date' }
+      { text: 'Element', link: 'https://web.tuan.party' },
+      { text: 'Cinny', link: 'https://cinny.tuan.party' }
     ],
 
     sidebar: [
@@ -20,6 +20,7 @@ export default defineConfig({
         items: [
           { text: '介绍', link: '/start' },
           { text: '注册', link: '/signup' },
+          { text: '密钥', link: '/signup' }，
           { text: '安全备份', link: '/security-backup' },
           { text: '概念碎碎念', link: '/concepts' }
         ]
