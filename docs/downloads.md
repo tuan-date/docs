@@ -2,24 +2,9 @@
 
 由于 Matrix 开源与互联互通的特性，你可以使用任何支持 Matrix 协议的客户端来连接到 Tuan Chat。以下的客户端仅是 Matrix 客户端中的一部分，如果你有兴趣，你也可以尝试探索其他客户端，甚至自己开发一个客户端。
 
-## SchildiChat
+## 下载
 
-### 介绍
-
-SchildiChat 是一个开源的 Fork 自 Element 的 Matrix 客户端，它相对于 Element 专注于提供更好的性能和更好的用户体验，优化了很多细节并增添了很多小功能而且可以在无法连接 ELement 官方实例的情况下使用。SchildiChat 由 SchildiChat 团队维护，目前支持 Android、Windows、macOS 和 Linux 等多个平台。
-
-- SchildiChat 桌面版源代码： [GitHub](https://github.com/SchildiChat/schildichat-desktop)
-- SchildiChat 移动版源代码： [GitHub](https://github.com/SchildiChat/SchildiChat-android)
-
-### Android 应用商店（均需互联网络环境）
-
-<a href="https://play.google.com/store/apps/details?id=de.spiritcroc.riotx" target="_blank"><img src="/assets/imgs/appstore/gplay.webp" width="25%" alt="Google Play"></a>
-
-<a href="https://f-droid.org/zh_Hans/packages/de.spiritcroc.riotx/" target="_blank"><img src="/assets/imgs/appstore/fdroid.webp" width="25%" alt="F-Droid"></a>
-
-### 下载
-
-或者，你也可以直接从下列链接下载最新版本的 SchildiChat 客户端，文件托管在 IPFS 上，每个月与官方进行一次同步更新：
+你可以直接从下列链接下载最新版本的 SchildiChat 和 FluffyChat 客户端，文件托管在 IPFS 上，每个月与官方进行一次同步更新：
 
 <table>
   <tr>
@@ -28,32 +13,38 @@ SchildiChat 是一个开源的 Fork 自 Element 的 Matrix 客户端，它相对
     <th>文件名</th>
     <th>下载链接</th>
   </tr>
-  <tr id="android">
-    <td>Android</td>
+  <tr id="sc-android">
+    <td>SchildiChat Android</td>
     <td class="version"></td>
     <td class="filename"></td>
     <td class="link"></td>
   </tr>
-  <tr id="windows-install">
-    <td>Windows 安装版</td>
+  <tr id="sc-windows-install">
+    <td>SchildiChat Windows 安装版</td>
     <td class="version"></td>
     <td class="filename"></td>
     <td class="link"></td>
   </tr>
-  <tr id="windows-portable">
-    <td>Windows 绿色版</td>
+  <tr id="sc-windows-portable">
+    <td>SchildiChat Windows 绿色版</td>
     <td class="version"></td>
     <td class="filename"></td>
     <td class="link"></td>
   </tr>
-  <tr id="macos">
-    <td>macOS</td>
+  <tr id="sc-macos">
+    <td>SchildiChat macOS</td>
     <td class="version"></td>
     <td class="filename"></td>
     <td class="link"></td>
   </tr>
-  <tr id="linux">
-    <td>Linux</td>
+  <tr id="sc-linux">
+    <td>SchildiChat Linux</td>
+    <td class="version"></td>
+    <td class="filename"></td>
+    <td class="link"></td>
+  </tr>
+  <tr id="fc-android">
+    <td>FluffyChat Android</td>
     <td class="version"></td>
     <td class="filename"></td>
     <td class="link"></td>
@@ -99,12 +90,28 @@ function updateVersionAndLink(platform, apiURL) {
 }
 
 // 使用函数来更新每个平台的数据
-updateVersionAndLink('android', '/clients/json/schildichat-android-cid.json');
-updateVersionAndLink('windows-install', '/clients/json/schildichat-windows-install-cid.json');
-updateVersionAndLink('windows-portable', '/clients/json/schildichat-windows-portable-cid.json');
-updateVersionAndLink('macos', '/clients/json/schildichat-macos-cid.json');
-updateVersionAndLink('linux', '/clients/json/schildichat-linux-appimage-cid.json');
+updateVersionAndLink('sc-android', '/clients/json/schildichat-android-cid.json');
+updateVersionAndLink('sc-windows-install', '/clients/json/schildichat-windows-install-cid.json');
+updateVersionAndLink('sc-windows-portable', '/clients/json/schildichat-windows-portable-cid.json');
+updateVersionAndLink('sc-macos', '/clients/json/schildichat-macos-cid.json');
+updateVersionAndLink('sc-linux', '/clients/json/schildichat-linux-appimage-cid.json');
+updateVersionAndLink('fc-android', '/clients/json/fluffychat-android-cid.json');
 </script>
+
+## SchildiChat
+
+### 介绍
+
+SchildiChat 是一个开源的 Fork 自 Element 的 Matrix 客户端，它相对于 Element 专注于提供更好的性能和更好的用户体验，优化了很多细节并增添了很多小功能而且可以在无法连接 ELement 官方实例的情况下使用。SchildiChat 由 SchildiChat 团队维护，目前支持 Android、Windows、macOS 和 Linux 等多个平台。
+
+- SchildiChat 桌面版源代码： [GitHub](https://github.com/SchildiChat/schildichat-desktop)
+- SchildiChat 移动版源代码： [GitHub](https://github.com/SchildiChat/SchildiChat-android)
+
+### Android 应用商店（均需互联网络环境）
+
+<a href="https://play.google.com/store/apps/details?id=de.spiritcroc.riotx" target="_blank"><img src="/assets/imgs/appstore/gplay.webp" width="25%" alt="Google Play"></a>
+
+<a href="https://f-droid.org/zh_Hans/packages/de.spiritcroc.riotx/" target="_blank"><img src="/assets/imgs/appstore/fdroid.webp" width="25%" alt="F-Droid"></a>
 
 > **关于 iOS 与 iPadOS 平台：**  
 > 很遗憾，目前 SchildiChat 暂未提供 iOS 版本。不过，你可以在登录外区 Apple 账号的前提下安装 Element 或下面要介绍的 FluffyChat（当然如果你选择自签或通过越狱等手段，请自行探索）  
@@ -114,7 +121,7 @@ updateVersionAndLink('linux', '/clients/json/schildichat-linux-appimage-cid.json
 
 ### 介绍
 
-FluffyChat 是一个开源的 Matrix 客户端，它专注于提供更好的用户体验，支持多种平台，包括 Android、iOS、Linux、macOS 和 Windows 等。FluffyChat 由 FluffyChat 团队维护。
+FluffyChat 是一个开源的 Matrix 客户端，它专注于提供更好的用户体验，支持多种平台，包括 Android、iOS、Linux、macOS 和 Windows 等。FluffyChat 遵循 Material You 设计风格，在界面上更加圆润现代，同时在有些被阉割的国产手机无法安装 SchildiChat 的情况下，FluffyChat 也是一个不错的选择。目前 FluffyChat 暂不支持语音和通话的界面。
 
 - FluffyChat 源代码： [GitHub](https://github.com/krille-chan/fluffychat)
   
@@ -125,5 +132,3 @@ FluffyChat 是一个开源的 Matrix 客户端，它专注于提供更好的用�
 <a href="https://f-droid.org/zh_Hans/packages/chat.fluffy.fluffychat/" target="_blank"><img src="/assets/imgs/appstore/fdroid.webp" width="25%" alt="F-Droid"></a>
 
 <a href="https://apps.apple.com/us/app/fluffychat/id1551469600" target="_blank"><img src="/assets/imgs/appstore/appstore-badge.webp" width="25%" alt="App Store"></a>
-
-### 下载

@@ -18,18 +18,18 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: '21'
-            # - name: Update SchildiChat Desktop
-            #   run: |
-            #     bash clients-update/schildichat-desktop-update.sh
-            #   shell: bash
-            #   env:
-            #     NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
-            # - name: Update SchildiChat Android
-            #   run: |
-            #     bash clients-update/schildichat-android-update.sh
-            #   shell: bash
-            #   env:
-            #     NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
+            - name: Update SchildiChat Desktop
+              run: |
+                bash clients-update/schildichat-desktop-update.sh
+              shell: bash
+              env:
+                NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
+            - name: Update SchildiChat Android
+              run: |
+                bash clients-update/schildichat-android-update.sh
+              shell: bash
+              env:
+                NFT_APIKEY: ${{ secrets.NFT_APIKEY }}
             - name: Update FluffyChat Android
               run: |
                 bash clients-update/fluffychat-android-update.sh
