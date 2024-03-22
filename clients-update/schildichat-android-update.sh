@@ -71,10 +71,10 @@ for file in *.car; do
     echo "Name: SchildiChat.apk"  # 调试语句
     echo "Version: $version"  # 调试语句
 
-    mkdir -p docs/clients/cid docs/clients/json
+    mkdir -p clients-update/cid clients-update/json
 
     # 将 cid 写入到指定的 .cid 文件中
-    echo "$cid" > "docs/clients/cid/schildichat-android.cid"
+    echo "$cid" > "clients-update/cid/schildichat-android.cid"
 
     # 构造 JSON 数据
     json_data=$(jq -n \
@@ -84,18 +84,18 @@ for file in *.car; do
         '{name: $name, cid: $cid, version: $version}')
 
     # 如果 JSON 文件不存在，则创建一个新的 JSON 文件
-    if [ ! -f "docs/clients/json/schildichat-android-cid.json" ]; then
-        echo '{"versions": [], "latest": {"name": "", "cid": "", "version": "latest"}}' > "docs/clients/json/schildichat-android-cid.json"
+    if [ ! -f "clients-update/json/schildichat-android-cid.json" ]; then
+        echo '{"versions": [], "latest": {"name": "", "cid": "", "version": "latest"}}' > "clients-update/json/schildichat-android-cid.json"
     fi
 
     # 读取原有的 JSON 数据
-    old_json_data=$(cat "docs/clients/json/schildichat-android-cid.json")
+    old_json_data=$(cat "clients-update/json/schildichat-android-cid.json")
 
     # 将新的 JSON 数据添加到 "versions" 数组中，并更新 "latest" 字段
     new_json_data=$(echo "$old_json_data" | jq -c --argjson new_data "$json_data" '.versions += [$new_data] | .latest.name = $new_data.name | .latest.cid = $new_data.cid')
 
     # 将新的 JSON 数据写入到 JSON 文件中
-    echo "$new_json_data" > "docs/clients/json/schildichat-android-cid.json"
+    echo "$new_json_data" > "clients-update/json/schildichat-android-cid.json"
 
     # 等待 3 秒
     echo "Waiting for 3 seconds..."
