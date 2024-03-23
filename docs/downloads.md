@@ -58,7 +58,6 @@ const gateways = [
   'https://ipfs.io',
   'https://cloudflare-ipfs.com',
   'https://dweb.link',
-  'https://ipfs.moralweb.com',
   'https://ipfs.joaoleitao.org',
   'https://ipfs.crossbell.io',
   'https://cf-ipfs.com',
